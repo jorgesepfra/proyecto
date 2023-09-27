@@ -1,0 +1,39 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #2EA1FF;
+    --secundario:#aa5db1;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+body {
+    font-size: 14px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background: var(--primario);
+    
+}
+.titulo3{
+    text-align: center;
+    font-size: 30px;
+    color: #030303dd;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.subtitulo{
+    text-align:center;
+    font-size: 25px;
+    color: #020202dd;
+    margin: 50px;
+    text-transform: uppercase;
+} 
+.subtitulo1{
+    text-align:center;
+    font-size: 20px;
+    color: #020202dd;
+    margin: 50px;
+    text-transform: uppercase;
+}
+.texto{
+   text-align: justify;
+   margin: 55px;
+}

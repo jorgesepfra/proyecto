@@ -1,0 +1,256 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #2EA1FF;
+    --secundario:#aa5db1;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--primario);
+    height: 300vh;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300vh;
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing:border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: #2fe01b;
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top:-5px;
+    color:#2EA1FF;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin:-5px 0 20px 5px;
+    color: blue;
+    cursor:pointer;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid;
+    background: #2EA1FF;
+    border-radius: 25px;
+    font-size: 18px;
+    color:white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: greenyellow;
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    color:black;
+}
+
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+
+
+form .rfc{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:40px 0 ;
+}
+
+.rfc input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border:none;
+    background: none;
+    outline: none;
+}
+
+.rfc label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.rfc span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: #2EA1FF;
+    transition: .5s;
+}
+
+.rfc input:focus ~ label,
+.rfc input:focus ~ label{
+    top:-5px;
+    color: #2EA1FF;
+}
+
+.rfc input:focus ~ span::before,
+.rfc input:focus ~ span::before{
+    width: 100%;
+}
+
+.formulario1{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    margin-top: 0;
+    transform: translate(-50%, -50%);    
+    width: 450px;
+    height: 950px;
+    background: white;
+    border-radius: 10px;    
+}
+
+.formulario1 h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario1 form{
+    padding: 0 40px;
+    box-sizing:border-box;
+    
+}
+
+
+
+form .boleto{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:40px 0 ;
+}
+
+.boleto input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border:none;
+    background: none;
+    outline: none;
+}
+
+.boleto label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.boleto span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: #2EA1FF;
+    transition: .5s;
+}
+
+.boleto input:focus ~ label,
+.boleto input:focus ~ label{
+    top:-5px;
+    color: #2EA1FF;
+}
+
+.boleto input:focus ~ span::before,
+.boleto input:focus ~ span::before{
+    width: 100%;
+}
+
+

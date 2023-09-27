@@ -1,0 +1,176 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #2EA1FF;
+  }
+  
+  .bus {
+    margin: 125px auto;
+    max-width: 250px;
+    background: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+  }
+  
+  .select {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .select h1 {
+    width: 60%;
+    margin: 100px auto 35px auto;
+  }
+
+  .entrada {
+    position: relative;
+    height: 40px;
+  }
+
+  .entrada:before {
+    content: "ENTRADA";
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px 2px 2px 2px;
+    display: block;
+    position: absolute;
+    background: rgb(101, 254, 24);
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 5px;
+  }
+  .entrada:before {
+    right: 25px;
+  }
+
+  .salida {
+    position: relative;
+    height: 50px;
+  }
+
+  .salida:before {
+    content: "SALIDA";
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px 2px 2px 2px;
+    display: block;
+    position: absolute;
+    background: rgb(247, 73, 73);
+    color: white;
+    top: -52%;
+    transform: translate(0, -50%);
+    border-radius: 5px;
+  }
+  .salida:before {
+    left: 230px;
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .seats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  
+  .seat {
+    display: flex;
+    flex: 0 0 21%;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .seat label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #a2a9a9;
+    border-radius: 5px; 
+    color: black; 
+  }
+
+  .seat label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0px 2px rgb(3, 110, 249);
+  }
+  
+  .seat:nth-child(2) { /*espacio entre asientos*/
+    margin-right: 14%;
+  }
+  .seat input[type=checkbox] {
+    position: absolute;
+  }
+  .seat input[type=checkbox]:checked + label {
+    background: #78e0ea;
+  }
+
+  img {
+    width: 180px; /* Ancho en píxeles */
+    height: 38px; /* Alto en píxeles */
+    margin-left: 30px; 
+  }
+
+  .header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-icono{
+  width: 25px;
+}
+.menu .navbar ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFFFF;
+  display: block;
+  font-weight: 600;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-3{
+  background-color: black;
+  padding: 5px 15px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+}
+
